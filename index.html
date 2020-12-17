@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="styler"  style="display: flex; justify-content: center;">
+<div class="form-group w-25">
+    <label for="my-input" class="form-check-label">Entrez les valeurs du vecteur A        :</label>
+    
+  
+    <input id="AX" id="" class="form-control" type="number" name="" placeholder="X" minlength="1" pattern="[-+]?[0-9]" title="Que des nombres pls" required> 
+    <input id="AY" class="form-control" type="number" name="" placeholder="Y" minlength="1" pattern="[-+]?[0-9]" title="Que des nombres pls"  required> 
+    <input id="AZ" class="form-control" type="number" name="" placeholder="Z"minlength="1" pattern="[-+]?[0-9]" title="Que des nombres pls" required> 
+   
+    <br>
+    <br>
+
+    <label for="my-input" class="form-check-label">Entrez les valeurs du vecteur B      :</label>
+    <input id="BX" class="form-control" type="number" name="" placeholder="X" minlength="1" pattern="[-+]?[0-9]" title="Que des nombres pls" required"> 
+    <input id="BY" class="form-control" type="number" name="" placeholder="Y" minlength="1" pattern="[-+]?[0-9]" title="Que des nombres pls" required> 
+    <input id="BZ" class="form-control" type="number" name="" placeholder="Z" minlength="1" pattern="[-+]?[0-9]" title="Que des nombres pls" required> 
+
+    <br> <br> <br>
+
+    <input class="button" type="submit" name="" value="Entrer" onclick="ProdScal()">
+
+</div>
+</div>
+
+
+<div class="results" style= "display:flexbox; justify-content: space-between;"  >
+    <br>
+    <p> Vos vecteurs sont : <br> 
+        <section id="VA"> </section>
+        <section id="VB"> </section>
+    </p>
+    <p>
+        Le produit scalaire est : <section id="prod">   </section>
+    </p>
+
+    <p id="Ortho">     </p>
+</div>
+<script src="/Script/script.js"></script>
+</body>
+</html>
